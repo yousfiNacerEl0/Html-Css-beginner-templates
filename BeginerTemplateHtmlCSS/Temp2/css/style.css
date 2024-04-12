@@ -1,0 +1,124 @@
+/* root element */
+ --root{
+    --primary-yellow:hsl(47, 88%, 63%);
+    --neutral-white:hsl(0, 0%, 100%);
+    --neutral-grey:hsl(0, 0%, 50%);
+    --neutral-black:hsl(0, 0%, 7%);
+ }
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ body{
+    background-color:hsl(47, 88%, 63%);
+    height: 100vh;
+    width: 100vw;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+ }
+ main{
+    width:450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 13px;
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    border: 1px solid hsl(0, 0%, 7%);
+ }
+ main .container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+
+ }
+ /* large pic section start */
+ .pic{
+    margin-bottom: 15px;
+ }
+ .pic img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    justify-self: center;
+    border-radius: 12px;
+ }
+ /* large pic section end */
+ 
+ /* text section start */
+ .Texts {
+    margin: 10px 0;
+    padding: 0 40px 0 0;
+   }
+   .Texts button{
+      width: 100px;
+      padding: 8px 8px;
+      background-color: hsl(47, 88%, 63%);
+    font-size: 17px;
+    border: none;
+    font-weight: 900;
+    border-radius: 7px;
+    color: hsl(0, 0%, 7%);
+    margin-bottom:15px ;
+ }
+ .Texts button + p{
+   margin-bottom: 15px;
+ }
+ .Texts h1{
+   margin-bottom: 17px;
+ }
+ .Texts h1 + p{
+    font-size: 16px;
+    word-break: keep-all;
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 20px;
+    line-height: 1.6;
+ }
+
+ /* text section end  */
+ 
+ /* profile info section  */
+ .profileInfo{
+   display: flex;
+   align-items: center;
+ }
+ .profileInfo h2{
+   text-align: center;
+   margin-left: 15px;
+   font-size: 20px;
+ }
+ .profileInfo img{
+   height: 40px;
+   width: 40px;
+ }
+ @media (max-width:470px) {
+   main{
+      width: 400px;
+      margin:50px 20px;
+      
+   }
+   .pic img{
+      height: 150px;
+   }
+   .Texts{
+      padding: 0;
+      width: 100%;
+   }
+   .Texts button + p{
+      font-size: 15px;
+   }
+   .Texts h1{
+      font-size: 19px;
+   }
+   .Texts h1 + p{
+      word-break: break-all;
+      font-size: 15px;
+   }
+   
+ }
+ 

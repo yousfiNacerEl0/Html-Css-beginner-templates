@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp13</title>
+    <!-- CSS LINKS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon links  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navBar">
+        <header>
+            <div class="logo">
+                <i class='bx bx-menu menuBtn' onclick="toggle()"></i>
+            </div>
+            <div class="title text">
+                <h1>AsmrCoding </h1>
+            </div>
+            
+        </header>
+        <main>
+            <div class="first box">
+                <a href="#"><i class='bx bx-home' ></i> <p class="text">Home</p> </a>
+                <a href="#"><i class='bx bxs-user' ></i> <p class="text">User</p></a>
+                <a href="#"><i class='bx bxs-cog' ></i><p class="text">Cog</p> </a>
+                
+            </div>
+            <div class="second box">
+                <a href="#"><i class='bx bx-package'></i><p class="text">package</p> </a>
+                <a href="#"><i class='bx bx-data' ></i><p class="text"> Database</p> </a>
+                <a href="#"><i class='bx bxs-music' ></i><p class="text">music</p>  </a>
+                <a href="#"><i class='bx bxl-graphql' ></i><p class="text">Graphql</p>  </a>
+            </div>
+            <div class="third box">
+                <a href="#"><i class='bx bxs-folder' ></i><p class="text">Folder</p>  </a>
+                <a href="#"><i class='bx bxl-typescript' ></i><p class="text">typescript</p>  </a>
+                <a href="#"><i class='bx bxs-lock-alt' ></i> <p class="text">security</p> </a>
+            </div>
+        </main>
+    </nav>
+    <script>
+        let nav = document.querySelector("nav")
+        let toggle = ()=> nav.classList.toggle("open");
+    </script>
+</body>
+</html> 

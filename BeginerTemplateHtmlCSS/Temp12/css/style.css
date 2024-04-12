@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+.op0{
+    opacity: 0;
+}
+.op1{
+    opacity: 1;
+}
+
+body,html{
+    height: 100%;
+}
+body{
+    background-color: black;
+    margin: 0;
+    display: flex;
+}
+nav.open {
+    width: fit-content;
+}
+nav.open .text{
+    opacity: 1;
+}
+body .text{
+    opacity: 0;
+}
+p{
+    margin: 0 0 0 25px;
+}
+nav{
+    height: 100%;
+    width: 55px;
+    background-color: #30449A;
+}
+nav header{
+    display: flex;
+    background-color: #253891;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+header > .logo{
+    display: flex;
+    align-items: center;
+    margin-right:20px ;
+}
+header > .logo i{
+    font-size: 30px;
+    margin-right: 15px;
+
+}
+header > .title {
+
+}
+header > .title h2{
+    font-size: 25px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+main > .box {
+    display: grid;
+    gap: 25px;
+    padding: 10px 12px;
+    color: white;
+    width: 100%;
+}
+main > .box a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+}
+main > .box i{
+    margin-right: 10px;
+}
+main > .first{
+    border-bottom: 1px solid gray;
+    
+}
+
+main > .second{
+    margin:20px 0 ;
+    border-bottom: 1px solid gray;
+    
+}
+

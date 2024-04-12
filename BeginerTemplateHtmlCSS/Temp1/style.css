@@ -1,0 +1,87 @@
+/* FONT LINK  */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Dancing+Script&family=Dosis:wght@300;500&family=Edu+SA+Beginner:wght@500&family=Montserrat:wght@300;400;500&family=Permanent+Marker&family=Roboto+Slab:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GENERAL OPTION  */
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 30px;
+    background-image: url(low-poly-grid-haikei\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+    animation: an 5s infinite alternate linear;
+}
+@keyframes an {
+    100%{
+        background-position: 30%;
+    }
+    
+}
+.Loging-card{
+
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 30px 18px 25px;
+    border-radius: 20px;
+    background:white;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+@media (width >= 500px) {
+    body{
+        padding:0 ;
+    }
+    .Loging-card{
+        width: 400px;
+        margin: 0;
+
+    }
+    
+}
+.Loging-card > h1{
+    font-size: 30px;
+    color:  rgb(0, 0, 0); 
+}
+.Loging-card > p {
+    color: gray;
+}
+.Form-card{
+    display: grid;
+    gap: 16px;
+}
+.Form-card input,.Form-card button{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Form-card input::placeholder{
+    color:gray;
+}
+.Form-card input{
+    border: 1px solid gray;
+}
+.Form-card button{
+    background-color: rgb(63, 63, 193);
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+.Form-card a{
+    text-align: left;
+}

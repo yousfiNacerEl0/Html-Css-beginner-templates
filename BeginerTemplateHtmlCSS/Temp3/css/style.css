@@ -1,0 +1,245 @@
+/* variable golabal */
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+/* begening of the code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+}
+main{
+    width: 25rem;
+    border-radius:20px;
+    border: 1px solid var(--Dark-Blue);
+    margin: 15px;
+    background:linear-gradient(200deg,var(--Dark-Blue) ,var(--Very-Dark-Blue));
+}
+/* main befor  */
+.main{
+    height: 408px;
+    width: 25rem;
+    border-radius:20px;
+    border: 1px solid var(--Dark-Blue);
+    margin: 15px;
+    background:linear-gradient(200deg,var(--Dark-Blue) ,var(--Very-Dark-Blue));
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+    
+}
+.main img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.main h1{
+    text-align: center;
+    margin-bottom:15px ;
+}
+.main p{
+    margin-bottom:15px ;
+    text-align: center;
+}
+/* main befor end  */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.container div{
+    width: 100%;
+    margin: 10px 0;
+}
+/* start of the first div "logo" */
+.container .logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.container .logo span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+}
+.container .logo svg path{
+   text-align: center;
+}
+ /* end of the frist div */
+
+ /* start of the second div  */
+ .container .text{
+    display: flex;
+    flex-direction: column;
+ }
+ .container .text h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom:10px ;
+ }
+ .container .text p{
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-all;
+ }
+ /* end of second div*/
+
+ /* start of the third div */
+ .container .numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .container .numbers span{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #262F38;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container .numbers span:hover{
+    background-color: var(--orange);
+ }
+ .container .numbers span:focus{
+    background-color: var(--Light-Grey);
+ }
+ /* end of the third div  */
+
+ /* start of the last div */
+.container .submitBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.container .submitBtn input{
+    width: 100%;
+    padding: 13px;
+    background-color: var(--orange);
+    transition: all .2s;
+    color: var(--White);
+    font-family: "Overpass", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .submitBtn input:hover{
+    background-color: var(--White);
+    color: var(--orange);
+}
+
+
+/* media  */
+/* phone  */
+@media (max-width:320px) {
+    main{
+        margin: 50px;
+        width:280px ;
+    }
+    .container{
+        padding: 15px;
+    }
+    .container .text h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom:10px ;
+        word-break: break-all;
+     }
+     .container .numbers span{
+        height:60px;
+        width: 60px;
+        margin: 3px;
+       
+     }
+}
+@media (min-width:290px) and (max-width:365px) {
+    main{
+        margin: 50px;
+        width:290px ;
+    }
+    .container{
+        padding: 20px;
+    }
+    .container .text h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom:10px ;
+        word-break: break-all;
+     }
+     .container .numbers span{
+        height:60px;
+        width: 60px;
+        margin: 3px;
+       
+     }
+}
+@media (max-width:295px) {
+    main{
+        margin: 50px;
+        width:250px ;
+    }
+    .container{
+        padding: 7px;
+    }
+    .container .text h3{
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom:10px ;
+        word-break: break-all;
+
+     }
+     .container .text p{
+        font-size: 15px;
+     }
+     .container .numbers span{
+        height:60px;
+        width: 60px;
+        margin: 3px;
+       
+     }
+     .container .submitBtn input{
+        padding: 9px;
+        margin-bottom: 10px;
+     }
+}
+@media (max-width:330px) {
+    .main img{
+        transform: scale(.8);
+        width: 100%;
+    }
+    .main{
+        padding: 10px;
+    }
+    
+}

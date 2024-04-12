@@ -1,0 +1,44 @@
+@media (max-width:400px) {
+    main{
+        width: 270px;
+    }
+    main .countainer{
+        width: 270px;
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 270px;
+    }
+    .top{
+        border-radius: 7px 7px 0 0;
+    }
+    .top img{
+        height: 80px;
+        width: 80px;
+        top: calc(100% - 40px);
+        left: calc(50% - 40px);
+    }
+    /* START BOTTOM  */
+    .bottom{
+        grid-template-rows: 150px 100px;
+        grid-template-columns: 270px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom .victoreInfo{
+        justify-self: center;
+    }
+    .bottom .victoreSocialScore{
+        width: 100%;
+    }
+    .bottom .victoreInfo .cotent  .colorAndFont .number{
+        font-size: 16px;
+    }
+    .colorAndFont{
+        font-size: 16px;
+        color: var(--Primary-Very-dark-desaturated-blue);
+        font-weight: 700;
+    }
+ .bottom .name{
+    font-size: 10px;
+ }
+
+}
